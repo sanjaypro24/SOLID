@@ -1,0 +1,13 @@
+using System;
+using System.IO;
+
+class User
+{
+    public string Name { get; set; }
+    public string Email { get; set; }
+
+    public void SaveToFile()
+    {
+        File.WriteAllText("user.txt", $"Name: {Name}, Email: {Email}");
+    }
+}
